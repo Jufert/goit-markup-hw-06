@@ -13,6 +13,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -26,35 +29,44 @@
             >Web<span class="logo_studio">Studio</span></a
           >
           <ul class="menu-list">
-            <li><a class="li_link current" href="./index.html">Studio</a></li>
-            <li><a class="li_link current" href="">Portfolio</a></li>
-            <li><a class="li_link current" href="">Contacts</a></li>
+            <li>
+              <a class="li_link current active_li" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="li_link" href="">Portfolio</a></li>
+            <li><a class="li_link" href="">Contacts</a></li>
           </ul>
         </nav>
         <address class="address">
           <ul class="header_ul_address">
-            <li>
+            <li class="li_address">
               <a class="contact" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="li_address">
               <a class="contact" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button type="button" class="header_button">
+          <svg class="header_icon" width="24" height="24">
+            <use href="./images/icons.svg#icon_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
-      <section class="section_one">
+      <section class="section_one section">
         <div class="container">
           <h1 class="header_one">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
       </section>
-      <section class="section_two">
+      <section class="section_two section">
         <div class="container">
           <h2 style="display: none" class="visually-hidden">Plan</h2>
           <ul class="section_two_ul">
@@ -109,7 +121,7 @@
           </ul>
         </div>
       </section>
-      <section class="section_three">
+      <section class="section_three section">
         <div class="container">
           <h2 class="header_two_section_three">Our Team</h2>
           <ul class="section_three_ul">
@@ -280,7 +292,7 @@
           </ul>
         </div>
       </section>
-      <section class="section_four">
+      <section class="section_four section">
         <div class="container">
           <h2 class="header_two_section_four">Our Portfolio</h2>
           <ul class="section_four_ul">
@@ -397,7 +409,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer_all">
         <div class="footer_logo_first">
           <a href="./index.html" class="logo_footer"
             >Web<span class="logo_studio_footer">Studio</span></a
@@ -462,6 +474,78 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile_menu">
+      <div class="container">
+        <button type="button" class="mobile_icon_close">
+          <svg class="mob_icon_close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile_menu_nav">
+          <ul class="mobile_menu_ul">
+            <li class="mobile_menu_li">
+              <a href="./index.html" class="mobile_menu_link active_link">
+                Studio
+              </a>
+            </li>
+            <li class="mobile_menu_li">
+              <a href="" class="mobile_menu_link">Portfolio</a>
+            </li>
+            <li class="mobile_menu_link">Contacts</li>
+          </ul>
+        </nav>
+        <address class="mobile_menu_address">
+          <ul class="mobile_menu_address_ul">
+            <li class="mobile_menu_address_li">
+              <a
+                class="mobile_menu_address_link active_link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile_menu_address_li">
+              <a
+                class="mobile_menu_address_link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile_menu_icon_ul">
+          <li class="mobile_menu_icon_li">
+            <a class="mobile_menu_icon_link" href="">
+              <svg class="mobile_menu_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile_menu_icon_li">
+            <a class="mobile_menu_icon_link" href="">
+              <svg class="mobile_menu_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile_menu_icon_li">
+            <a class="mobile_menu_icon_link" href="">
+              <svg class="mobile_menu_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile_menu_icon_li">
+            <a class="mobile_menu_icon_link" href="">
+              <svg class="mobile_menu_icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="form_container">
       <div class="form_info">
         <button class="close_button" type="button">
