@@ -553,7 +553,7 @@ header {
 }
 /*  Buttom Header */
 .mobile_menu {
-  display: none;
+  display: flex;
   flex-direction: column;
   transform: translateY(100%);
   width: 100%;
